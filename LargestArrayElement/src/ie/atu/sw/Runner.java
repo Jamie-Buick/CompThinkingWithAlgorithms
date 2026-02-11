@@ -12,7 +12,6 @@ public class Runner {
 		
 	}
 	
-	
 	// Starting a runningMax variable at 0, check if the current element is greater than runningMax. If so, set runningMax = current element.
 	// Repeat process for the length of the array.
 	public static int findLargestElement(int[] numbers) {
