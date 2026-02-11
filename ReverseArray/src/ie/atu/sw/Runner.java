@@ -3,7 +3,6 @@ package ie.atu.sw;
 public class Runner {
 
 	
-	
 	public static void main(String[] args) {
 		// Array of random numbers
 		int numbers[] = {1,10,50,100,250,2000,3651,5412,1,2,1000000,5,258,28};
@@ -18,10 +17,7 @@ public class Runner {
 		
 	}
 	
-	
 
-	
-	
 	public static int[] reverseArray2(int[] inputArr) {
 		
 		int j = 0;
@@ -35,9 +31,5 @@ public class Runner {
 		return outputArray;
 		
 	}
-	
-	
-	
-	
 	
 }
