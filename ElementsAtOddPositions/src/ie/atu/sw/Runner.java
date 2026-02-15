@@ -10,10 +10,6 @@ public class Runner {
 		for(int i = 0; i < outputArr2.length; i++) {
 			System.out.println(outputArr2[i]);
 		}
-		
-		
-		
-	
 	}
 	
 	
@@ -28,7 +24,6 @@ public class Runner {
 				outputArrayIndex++;
 			}
 		}
-		
 		
 		return outputArray;
 	}
