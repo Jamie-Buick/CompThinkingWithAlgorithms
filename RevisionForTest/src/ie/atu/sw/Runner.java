@@ -153,9 +153,107 @@ public class Runner {
 		}else {
 			return strCount(str.substring(1), sub);
 		}
-		
 		  
 	}
+	
+	
+	
+	public static String delDel(String str) {
+			
+		if (str.length() < 3) {
+			return str;
+		}
+		
+		
+		if ((str.charAt(1) == 'd') && (str.charAt(2) == 'e') && (str.charAt(3) == 'l')) {
+			String firstLetter = str.substring(0, 1);
+			return firstLetter + str.substring(4);
+		}
+		
+		return str;
+		  
+	}
+	
+	
+	
+	public static boolean mixStart(String str) {
+		
+		if (str.length() < 3) {
+			return false;
+		}
+		
+		if ((str.charAt(1) == 'i') && (str.charAt(2) == 'x')) {
+			return true;
+		}
+		
+		
+		return false;
+		  
+	}
+
+	public static String front3(String str) {
+		
+		if (str.length() > 3) {
+			 
+			return str.substring(0,3) + str.substring(0,3) + str.substring(0,3);
+		}
+		
+		return str;
+		  
+	}
+	
+	
+
+	public static boolean arrayFront9(int[] nums) {
+		
+		if (nums.length > 4) {
+			for (int i = 0; i < 4; i++) {
+				if (nums[i] == 9) {
+					return true;
+				}
+			}
+			return false;
+		}else {
+			for (int i = 0; i < nums.length; i++) {
+				if (nums[i] == 9) {
+					return true;
+				}
+			}
+			return false;
+		}  
+	}
+	
+	
+	
+	public static boolean array123(int[] nums) {
+		
+		
+		for (int i = 0; i < nums.length-2; i++) {
+			if ((nums[i] == 1) && (nums[i+1] == 2) && (nums[i+2] == 3)){
+				return true;
+			}
+		}
+		
+		return false;
+		  
+	}
+
+	public static String stringX(String str) {
+		
+		
+		 String result = "";
+		  for (int i=0; i<str.length(); i++) {
+		    // Only append the char if it is not the "x" case
+		    if (!(i > 0 && i < (str.length()-1) && str.substring(i, i+1).equals("x"))) {
+		      result = result + str.substring(i, i+1); // Could use str.charAt(i) here
+		    }
+		  }
+		  return result;
+		
+	
+	}
+
+	
 
 
 	
@@ -170,7 +268,13 @@ public class Runner {
 		//System.out.println(allStar("hello"));
 		//System.out.println(powerN(3,0));
 		//System.out.println(nestParen("(((x))"));
-		System.out.println(strCount("cacatcowcat", "cat"));
+		//System.out.println(strCount("cacatcowcat", "cat"));
+		//System.out.println(delDel("adelbc"));
+		//System.out.println(mixStart("mix snacks"));
+		//System.out.println(front3("Chocolate"));
+		//System.out.println(arrayFront9(new int[] {1, 2, 3, 4, 9}));
+		//System.out.println(array123(new int[] {1, 1, 2, 1, 2, 3}));
+		System.out.println(stringX("xxHxix"));
 	
 	}
 	
